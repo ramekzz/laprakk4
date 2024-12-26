@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perpustakaan Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+
+  <body id="Home">
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#Home">
+          <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
+          Perpustakaan
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Layanan</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#Pendaftaran">Pendaftaran Anggota</a></li>
+                <li><a class="dropdown-item" href="#Informasi">Informasi Layanan</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#Koleksi">Koleksi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Jumbotron -->
+    <section class="jumbotron text-center text-white bg-primary">
+      <div class="container py-5">
+        <h1 class="display-4">Selamat Datang di Perpustakaan Sekolah</h1>
+        <p class="lead">Temukan buku favorit Anda dan daftar sebagai anggota untuk menikmati berbagai layanan kami.</p>
+      </div>
+    </section>
+    <!-- End Jumbotron -->
+
+    <!-- Start About -->
+    <section id="About" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Tentang Kami</h2>
+            <p>Perpustakaan kami menyediakan berbagai macam koleksi buku yang mendukung pembelajaran dan menambah wawasan siswa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Start Layanan -->
+    <section id="Pendaftaran" class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Pendaftaran Anggota</h2>
+            <p>Isi formulir di bawah ini untuk menjadi anggota perpustakaan kami.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form name="Formulir_Pendaftaran">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap Anda" name="nama" />
+              </div>
+              <div class="mb-3">
+                <label for="kelas" class="form-label">Kelas</label>
+                <input type="text" class="form-control" id="kelas" placeholder="Masukkan kelas Anda" name="kelas" />
+              </div>
+              <div class="mb-3">
+                <label for="nis" class="form-label">Nomor Induk Siswa (NIS)</label>
+                <input type="text" class="form-control" id="nis" placeholder="Masukkan NIS Anda" name="nis" />
+              </div>
+              <div class="mb-3">
+                <label for="alamat" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="alamat" placeholder="Masukkan alamat Anda" name="alamat" />
+              </div>
+              <div class="mb-3">
+                <label for="telepon" class="form-label">Nomor Telepon</label>
+                <input type="text" class="form-control" id="telepon" placeholder="Masukkan nomor telepon Anda" name="telepon" />
+              </div>
+              <button type="submit" class="btn btn-primary">Daftar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Layanan -->
+
+    <!-- Start Koleksi -->
+    <section id="Koleksi" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Koleksi Buku</h2>
+            <p>Berbagai koleksi buku tersedia untuk mendukung proses belajar dan menambah wawasan.</p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Koleksi Buku -->
+          <div class="col-md-3">
+            <div class="card">
+              <img src="img/book1.jpg" class="card-img-top" alt="Buku 1" />
+              <div class="card-body">
+                <p class="card-text">Hakikat Mencari Pengetahuan</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="img/book2.jpeg" class="card-img-top" alt="Buku 2" />
+              <div class="card-body">
+                <p class="card-text">Sejarah Pendidikan Islam di Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="img/book3.jpg" class="card-img-top" alt="Buku 3" />
+              <div class="card-body">
+                <p class="card-text">Pengembangan Sistem Informasi Manajemen</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="img/book4.jpg" class="card-img-top" alt="Buku 4" />
+              <div class="card-body">
+                <p class="card-text">Statistika dengan R</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Koleksi -->
+
+    <!-- Start Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+      <div class="container">
+        <p>Alamat: Jl. Degolan No 4444, Yogyakarta | Kontak: 081234567890 | Email: perpustakaan@sekolah.id</p>
+        <p>
+          Ikuti kami di:
+          <a href="https://www.facebook.com/perpustakaanuiiyk/" class="text-white"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/PerpustakaanUii" class="text-white"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/perpustakaanuii" class="text-white"><i class="bi bi-instagram"></i></a>
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyaXjEZ42At4N5_k_SzcFY25joQX8k1xutoP1HAn-xReHURp7_0dziSQA8JevG7rl46ZQ/exec";
+      const form = document.forms["Formulir_Pendaftaran"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            alert("Data berhasil dikirim!");
+            form.reset();
+          })
+          .catch((error) => {
+            alert("Terjadi kesalahan saat mengirim data.");
+          });
+      });
+    </script>
+  </body>
+</html>
